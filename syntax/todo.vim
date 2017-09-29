@@ -1,4 +1,4 @@
-runtime! syntax/markdown.vim
+" runtime! syntax/markdown.vim
 
 " if version < 600
 "   syntax clear
