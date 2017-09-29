@@ -1,12 +1,4 @@
-if version < 600
-  so <sfile>:p:h/markdown.vim
-else
-  runtime! syntax/markdown.vim
-
-  if exists('b:current_syntax')
-    unlet b:current_syntax
-  endif
-endif
+runtime! syntax/markdown.vim
 
 " if version < 600
 "   syntax clear
