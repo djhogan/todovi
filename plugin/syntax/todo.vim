@@ -15,6 +15,3 @@ runtime! syntax/markdown.vim
 " syn match todoChkBx /test/
 
 " hi def link todoChkBx   Todo
-
-let b:current_syntax = 'todo'
-
