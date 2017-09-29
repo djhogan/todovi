@@ -14,4 +14,9 @@ elseif exists('b:current_syntax')
   finish
 endif
 
-syn match todoChkBx /\[[ x]\]/
+syn match todoChkBx /test/
+
+hi def link todoChkBx   Todo
+
+let b:current_syntax = 'todo'
+
