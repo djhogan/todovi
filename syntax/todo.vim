@@ -1,4 +1,4 @@
-" runtime! syntax/markdown.vim
+runtime! syntax/markdown.vim
 
 " if version < 600
 "   syntax clear
@@ -12,8 +12,8 @@
 "   command! -nargs=+ HtmlHiLink hi def link <args>
 " endif
 
-" syn match todoChkBx /test/
+syn match todoChkBx /test/
 
 highlight default link todoChkBx  Todo
-"
+
 let b:current_syntax = 'todo'
