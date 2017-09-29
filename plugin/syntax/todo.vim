@@ -1,4 +1,4 @@
-runtime! syntax/markdown.vim
+" runtime! syntax/markdown.vim
 
 " if version < 600
 "   syntax clear
@@ -14,4 +14,6 @@ runtime! syntax/markdown.vim
 
 " syn match todoChkBx /test/
 
-" hi def link todoChkBx   Todo
+highlight default link todoChkBx  Todo
+"
+let b:current_syntax = 'todo'
