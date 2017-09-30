@@ -1,10 +1,8 @@
 " runtime! syntax/markdown.vim
 
-" if version < 600
-"   syntax clear
-" elseif exists('b:current_syntax')
-"   finish
-" endif
+runtime! syntax/html.vim
+unlet b:current_syntax
+
 " 
 " if version < 508
 "   command! -nargs=+ HtmlHiLink hi link <args>
@@ -12,7 +10,10 @@
 "   command! -nargs=+ HtmlHiLink hi def link <args>
 " endif
 
-syn match todoChkBx /test/
+syn match todoChkBx /^\[[ xX]\]/
+syn match htmlH1 /^# .*$/
+syn match htmlH2 /^## .*$/
+syn match htmlLink /#\w\+/
 
 highlight default link todoChkBx  Todo
 
