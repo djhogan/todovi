@@ -1,1 +1,1 @@
-au BufNewFile,BufRead test.todo set filetype=todo
+au BufNewFile,BufRead TODO set filetype=todo

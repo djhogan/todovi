@@ -3,14 +3,9 @@
 runtime! syntax/html.vim
 unlet b:current_syntax
 
-" 
-" if version < 508
-"   command! -nargs=+ HtmlHiLink hi link <args>
-" else
-"   command! -nargs=+ HtmlHiLink hi def link <args>
-" endif
+" TODO backward compatibility (see vim-markdown)
 
-syn match todoChkBx /^\[[ xX]\]/
+syn match todoChkBx /^\[[ \-x]\]!*/
 syn match htmlH1 /^# .*$/
 syn match htmlH2 /^## .*$/
 syn match htmlLink /#\w\+/
