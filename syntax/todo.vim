@@ -5,7 +5,7 @@ unlet b:current_syntax
 
 " TODO backward compatibility (see vim-markdown)
 
-syn match todoChkBx /^\[[ \-x]\]!*/
+syn match todoChkBx /^\s*\[[ \-x]\]!*/
 syn match htmlH1 /^# .*$/
 syn match htmlH2 /^## .*$/
 syn match htmlLink /#\w\+/
